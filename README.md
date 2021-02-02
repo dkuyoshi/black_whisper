@@ -1,7 +1,8 @@
 # black_whisper
 昔仲間内で楽しんでた4人用の遊びを実装してみた
 
-###
+### Rule
+- One Night人狼のオマージュ
 
 
 ## TODO
