@@ -5,6 +5,6 @@
 
 
 ## TODO
--[] username入力
--[] 各positionのランダム振り分け
--[] ゲームの全体の流れ
+- [ ] username入力
+- [ ] 各positionのランダム振り分け
+- [ ] ゲームの全体の流れ
