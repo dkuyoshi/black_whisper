@@ -8,4 +8,5 @@
 ## TODO
 - [ ] username入力
 - [ ] 各positionのランダム振り分け
+- [ ] positionの説明一蘭確認のView
 - [ ] ゲームの全体の流れ
