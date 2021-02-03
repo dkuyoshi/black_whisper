@@ -44,7 +44,7 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
                 nextView.csvArray = csvArray
             }
             if segue.identifier == "toGameStart" {
-                let nextView = segue.destination as! PositionViewController
+                let nextView = segue.destination as! GameStartViewController
                 nextView.csvArray = csvArray
             }
         }
