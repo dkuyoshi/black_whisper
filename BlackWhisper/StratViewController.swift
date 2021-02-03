@@ -52,6 +52,7 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func btnAction(sender: UIButton){
         // print(sender.tag)
         self.audio.stopMusic()
+        self.audio.playSoundEffect(named: "hit.mp3")
     }
     
     @IBAction func posBtnAction(sender: UIButton){
