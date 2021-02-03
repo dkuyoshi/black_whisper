@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B64D59325C9274300CC7A52 /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D59225C9274300CC7A52 /* GameStartViewController.swift */; };
-		5B64D59925C9368E00CC7A52 /* ahriman.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B64D59825C9368D00CC7A52 /* ahriman.png */; };
 		5B64D59D25C9598700CC7A52 /* AddBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D59C25C9598700CC7A52 /* AddBackground.swift */; };
-		5B64D5A025C959ED00CC7A52 /* back_title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B64D59F25C959ED00CC7A52 /* back_title.jpg */; };
-		5B64D5A425C97A2A00CC7A52 /* title1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B64D5A325C97A2A00CC7A52 /* title1.mp3 */; };
 		5B64D5A725C97D3800CC7A52 /* JKAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D5A625C97D3800CC7A52 /* JKAudioPlayer.swift */; };
 		5B86F62A25C8FC040037D40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86F62925C8FC040037D40C /* AppDelegate.swift */; };
 		5B86F62C25C8FC040037D40C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86F62B25C8FC040037D40C /* SceneDelegate.swift */; };
@@ -26,12 +23,8 @@
 
 /* Begin PBXFileReference section */
 		5B64D59225C9274300CC7A52 /* GameStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
-		5B64D59825C9368D00CC7A52 /* ahriman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ahriman.png; sourceTree = "<group>"; };
 		5B64D59C25C9598700CC7A52 /* AddBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBackground.swift; sourceTree = "<group>"; };
-		5B64D59F25C959ED00CC7A52 /* back_title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back_title.jpg; sourceTree = "<group>"; };
-		5B64D5A325C97A2A00CC7A52 /* title1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = title1.mp3; path = ../../../../Music/Logic/Bounces/game/title1.mp3; sourceTree = "<group>"; };
 		5B64D5A625C97D3800CC7A52 /* JKAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAudioPlayer.swift; sourceTree = "<group>"; };
-		5B75E64725CA31560091DA1D /* title1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = title1.mp3; sourceTree = "<group>"; };
 		5B86F62625C8FC040037D40C /* BlackWhisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackWhisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B86F62925C8FC040037D40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B86F62B25C8FC040037D40C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,9 +52,8 @@
 		5B64D59525C9362400CC7A52 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5B64D5A325C97A2A00CC7A52 /* title1.mp3 */,
-				5B64D59725C9365D00CC7A52 /* bgms */,
 				5B64D59625C9364A00CC7A52 /* imgs */,
+				5B64D59725C9365D00CC7A52 /* bgms */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -69,16 +61,14 @@
 		5B64D59625C9364A00CC7A52 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
-				5B64D59F25C959ED00CC7A52 /* back_title.jpg */,
-				5B64D59825C9368D00CC7A52 /* ahriman.png */,
 			);
-			path = imgs;
+			name = imgs;
+			path = BlackWhisper/Resources/imgs;
 			sourceTree = "<group>";
 		};
 		5B64D59725C9365D00CC7A52 /* bgms */ = {
 			isa = PBXGroup;
 			children = (
-				5B75E64725CA31560091DA1D /* title1.mp3 */,
 			);
 			path = bgms;
 			sourceTree = "<group>";
@@ -186,12 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B86F63625C8FC040037D40C /* LaunchScreen.storyboard in Resources */,
-				5B64D5A025C959ED00CC7A52 /* back_title.jpg in Resources */,
 				5B86F63325C8FC040037D40C /* Assets.xcassets in Resources */,
 				5B86F63125C8FC040037D40C /* Main.storyboard in Resources */,
-				5B64D5A425C97A2A00CC7A52 /* title1.mp3 in Resources */,
 				5B86F64525C904320037D40C /* position.csv in Resources */,
-				5B64D59925C9368E00CC7A52 /* ahriman.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
