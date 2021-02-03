@@ -31,6 +31,7 @@
 		5B64D59F25C959ED00CC7A52 /* back_title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back_title.jpg; sourceTree = "<group>"; };
 		5B64D5A325C97A2A00CC7A52 /* title1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = title1.mp3; path = ../../../../Music/Logic/Bounces/game/title1.mp3; sourceTree = "<group>"; };
 		5B64D5A625C97D3800CC7A52 /* JKAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAudioPlayer.swift; sourceTree = "<group>"; };
+		5B75E64725CA31560091DA1D /* title1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = title1.mp3; sourceTree = "<group>"; };
 		5B86F62625C8FC040037D40C /* BlackWhisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackWhisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B86F62925C8FC040037D40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B86F62B25C8FC040037D40C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		5B64D59725C9365D00CC7A52 /* bgms */ = {
 			isa = PBXGroup;
 			children = (
+				5B75E64725CA31560091DA1D /* title1.mp3 */,
 			);
 			path = bgms;
 			sourceTree = "<group>";

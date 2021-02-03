@@ -9,6 +9,8 @@ import UIKit
 
 class GameStartViewController: UIViewController {
 
+    var csvArray: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

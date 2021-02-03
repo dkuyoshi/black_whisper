@@ -69,7 +69,7 @@
                                 <state key="normal" title="役を確認する"/>
                                 <connections>
                                     <action selector="posBtnActionWithSender:" destination="a3d-jh-sNM" eventType="touchUpInside" id="v7B-Qm-cIL"/>
-                                    <segue destination="8OA-x7-QAS" kind="showDetail" id="tUc-2U-w7r"/>
+                                    <segue destination="8OA-x7-QAS" kind="showDetail" identifier="toPos" id="tUc-2U-w7r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uW-l8-CNY">
@@ -95,7 +95,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnActionWithSender:" destination="a3d-jh-sNM" eventType="touchUpInside" id="E4O-FN-xFf"/>
-                                    <segue destination="b5o-zn-dm4" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="7Ku-9b-UKL"/>
+                                    <segue destination="b5o-zn-dm4" kind="modal" identifier="toGameStart" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="7Ku-9b-UKL"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -8,11 +8,14 @@
 import UIKit
 
 class PositionViewController: UIViewController {
+    
+    var csvArray: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print(csvArray)
     }
     
     @IBAction func backBtnAction(_ sender: Any) {

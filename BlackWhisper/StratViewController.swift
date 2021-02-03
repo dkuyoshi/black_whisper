@@ -37,8 +37,20 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+            if segue.identifier == "toPos" {
+                let nextView = segue.destination as! PositionViewController
+                nextView.csvArray = csvArray
+            }
+            if segue.identifier == "toGameStart" {
+                let nextView = segue.destination as! PositionViewController
+                nextView.csvArray = csvArray
+            }
+        }
+    
     @IBAction func btnAction(sender: UIButton){
-        print(sender.tag)
+        // print(sender.tag)
         self.audio.stopMusic()
     }
     
