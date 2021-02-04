@@ -16,23 +16,21 @@ class CheckViewController: UIViewController {
     var csvArray: [String] = []
     var positionArray: [Int] = []
     
-    // この画面が何回きたかのカウント
-    var count: Int = 0
+    // 共通変数のあれこれ
+    var myVar = GlobalVar.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        print(userNames)
-        print(csvArray)
-        print(positionArray)
-        
-        self.userCheckText.text = userNames[count]
+        self.userCheckText.text = myVar.userNames[myVar.count]
         self.checkButton.layer.cornerRadius = 10.0
+        print(myVar.count)
+        print(myVar.userNames)
     }
     
     @IBAction func pushCheckButton(sender: UIButton){
-        let position = self.positionArray[count]
+        let position = myVar.positionArray[myVar.count]
         switch position {
         case 0:
             self.performSegue(withIdentifier: "toStudent", sender: nil)
@@ -55,6 +53,7 @@ class CheckViewController: UIViewController {
         default:
             break
         }
+        myVar.count += 1
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,40 +61,38 @@ class CheckViewController: UIViewController {
         switch tag {
         case "toStudent":
             let nextView = segue.destination as! StudentViewController
-            nextView.userName = self.userNames[count]
+            nextView.userName = myVar.userNames[myVar.count]
             nextView.csvArray = self.csvArray
-            nextView.position = self.positionArray[count]
+            nextView.position = myVar.positionArray[myVar.count]
         case "toExcellent":
             let nextView = segue.destination as! ExcellentStudentViewController
-            nextView.userName = self.userNames[count]
+            nextView.userName = myVar.userNames[myVar.count]
             nextView.csvArray = self.csvArray
-            nextView.position = self.positionArray[count]
+            nextView.position = myVar.positionArray[myVar.count]
         case "toKiller":
             let nextView = segue.destination as! KillerViewController
-            nextView.userName = self.userNames[count]
+            nextView.userName = myVar.userNames[myVar.count]
             nextView.csvArray = self.csvArray
-            nextView.position = self.positionArray[count]
+            nextView.position = myVar.positionArray[myVar.count]
         case "toPro":
             let nextView = segue.destination as! ProffesionalViewController
-            nextView.userName = self.userNames[count]
+            nextView.userName = myVar.userNames[myVar.count]
             nextView.csvArray = self.csvArray
-            nextView.position = self.positionArray[count]
+            nextView.position = myVar.positionArray[myVar.count]
         case "toM":
             let nextView = segue.destination as! MViewController
-            nextView.userName = self.userNames[count]
+            nextView.userName = myVar.userNames[myVar.count]
             nextView.csvArray = self.csvArray
-            nextView.position = self.positionArray[count]
+            nextView.position = myVar.positionArray[myVar.count]
         case "toShadow":
             let nextView = segue.destination as! ShadowViewController
-            nextView.userName = self.userNames[count]
+            nextView.userName = myVar.userNames[myVar.count]
             nextView.csvArray = self.csvArray
-            nextView.position = self.positionArray[count]
+            nextView.position = myVar.positionArray[myVar.count]
         default:
             print("ERROR <- I don't know why ???")
             break
         }
-        
-        count += 1
     }
 
     /*

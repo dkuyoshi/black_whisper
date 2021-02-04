@@ -34,6 +34,7 @@
 		5BAACF2A25CC181E00B59857 /* ProffesionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2925CC181E00B59857 /* ProffesionalViewController.swift */; };
 		5BAACF2D25CC18A200B59857 /* MViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2C25CC18A200B59857 /* MViewController.swift */; };
 		5BAACF3025CC192C00B59857 /* ShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2F25CC192C00B59857 /* ShadowViewController.swift */; };
+		5BAACF3325CC298400B59857 /* GlobalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF3225CC298400B59857 /* GlobalVar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		5BAACF2925CC181E00B59857 /* ProffesionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProffesionalViewController.swift; sourceTree = "<group>"; };
 		5BAACF2C25CC18A200B59857 /* MViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MViewController.swift; sourceTree = "<group>"; };
 		5BAACF2F25CC192C00B59857 /* ShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewController.swift; sourceTree = "<group>"; };
+		5BAACF3225CC298400B59857 /* GlobalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				5B86F63225C8FC040037D40C /* Assets.xcassets */,
 				5B86F63425C8FC040037D40C /* LaunchScreen.storyboard */,
 				5B86F63725C8FC040037D40C /* Info.plist */,
+				5BAACF3225CC298400B59857 /* GlobalVar.swift */,
 			);
 			path = BlackWhisper;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				5BAACF0825CA855E00B59857 /* CheckViewController.swift in Sources */,
 				5BAACF2725CC171F00B59857 /* KillerViewController.swift in Sources */,
+				5BAACF3325CC298400B59857 /* GlobalVar.swift in Sources */,
 				5B86F62E25C8FC040037D40C /* ViewController.swift in Sources */,
 				5B86F63F25C8FDD60037D40C /* StratViewController.swift in Sources */,
 				5BAACF2A25CC181E00B59857 /* ProffesionalViewController.swift in Sources */,

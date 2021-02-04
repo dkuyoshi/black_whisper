@@ -10,6 +10,7 @@ import UIKit
 class ExcellentStudentViewController: UIViewController {
     
     @IBOutlet var userLabel: UILabel!
+    @IBOutlet var checkButton: UIButton!
     
     var userName: String = ""
     var csvArray: [String] = []
@@ -19,6 +20,7 @@ class ExcellentStudentViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.checkButton.layer.cornerRadius = 10.0
         userLabel.text = userName
     }
     

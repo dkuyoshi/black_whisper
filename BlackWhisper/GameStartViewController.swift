@@ -30,6 +30,8 @@ class GameStartViewController: UIViewController {
     
     var timer: Timer = Timer()
     
+    var myVar = GlobalVar.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -58,8 +60,10 @@ class GameStartViewController: UIViewController {
         if segue.identifier == "toCheck" {
             let nextView = segue.destination as! CheckViewController
             nextView.userNames = self.userNames
+            myVar.userNames = self.userNames
             nextView.csvArray = self.csvArray
             nextView.positionArray = self.positionAssignment
+            myVar.positionArray = self.positionAssignment
         }
         else{
             print("ERROR <- Start to First Image")
