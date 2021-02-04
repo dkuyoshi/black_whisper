@@ -8,13 +8,19 @@
 import UIKit
 
 class ShadowViewController: UIViewController {
+    
+    @IBOutlet var userLabel: UILabel!
+    
+    var userName: String = ""
+    var csvArray: [String] = []
+    var position: Int = -1
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        userLabel.text = userName
     }
-    
 
     /*
     // MARK: - Navigation

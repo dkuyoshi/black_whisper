@@ -57,6 +57,46 @@ class CheckViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tag: String = segue.identifier!
+        switch tag {
+        case "toStudent":
+            let nextView = segue.destination as! StudentViewController
+            nextView.userName = self.userNames[count]
+            nextView.csvArray = self.csvArray
+            nextView.position = self.positionArray[count]
+        case "toExcellent":
+            let nextView = segue.destination as! ExcellentStudentViewController
+            nextView.userName = self.userNames[count]
+            nextView.csvArray = self.csvArray
+            nextView.position = self.positionArray[count]
+        case "toKiller":
+            let nextView = segue.destination as! KillerViewController
+            nextView.userName = self.userNames[count]
+            nextView.csvArray = self.csvArray
+            nextView.position = self.positionArray[count]
+        case "toPro":
+            let nextView = segue.destination as! ProffesionalViewController
+            nextView.userName = self.userNames[count]
+            nextView.csvArray = self.csvArray
+            nextView.position = self.positionArray[count]
+        case "toM":
+            let nextView = segue.destination as! MViewController
+            nextView.userName = self.userNames[count]
+            nextView.csvArray = self.csvArray
+            nextView.position = self.positionArray[count]
+        case "toShadow":
+            let nextView = segue.destination as! ShadowViewController
+            nextView.userName = self.userNames[count]
+            nextView.csvArray = self.csvArray
+            nextView.position = self.positionArray[count]
+        default:
+            print("ERROR <- I don't know why ???")
+            break
+        }
+        
+        count += 1
+    }
 
     /*
     // MARK: - Navigation
