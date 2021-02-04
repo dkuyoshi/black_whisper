@@ -103,6 +103,7 @@ class GameStartViewController: UIViewController {
         if segue.identifier == "toFirst" {
             let nextView = segue.destination as! FirstViewController
             nextView.userNames = self.userNames
+            nextView.csvArray = self.csvArray
         }
     }
     
