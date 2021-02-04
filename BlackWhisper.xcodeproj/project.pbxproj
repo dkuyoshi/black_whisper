@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B51D3BD25CA754700DFF779 /* scary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B51D3BC25CA754700DFF779 /* scary.mp3 */; };
 		5B64D59325C9274300CC7A52 /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D59225C9274300CC7A52 /* GameStartViewController.swift */; };
-		5B64D59D25C9598700CC7A52 /* AddBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D59C25C9598700CC7A52 /* AddBackground.swift */; };
+		5B64D59D25C9598700CC7A52 /* UIView+addBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D59C25C9598700CC7A52 /* UIView+addBackground.swift */; };
 		5B64D5A725C97D3800CC7A52 /* JKAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D5A625C97D3800CC7A52 /* JKAudioPlayer.swift */; };
 		5B75E64F25CA3A6C0091DA1D /* title1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B75E64E25CA3A6C0091DA1D /* title1.mp3 */; };
 		5B75E65225CA3E000091DA1D /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B75E65125CA3E000091DA1D /* hit.mp3 */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		5B51D3BC25CA754700DFF779 /* scary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = scary.mp3; path = ../../../../Music/Logic/Bounces/game/scary.mp3; sourceTree = "<group>"; };
 		5B64D59225C9274300CC7A52 /* GameStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
-		5B64D59C25C9598700CC7A52 /* AddBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBackground.swift; sourceTree = "<group>"; };
+		5B64D59C25C9598700CC7A52 /* UIView+addBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBackground.swift"; sourceTree = "<group>"; };
 		5B64D5A625C97D3800CC7A52 /* JKAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAudioPlayer.swift; sourceTree = "<group>"; };
 		5B75E64E25CA3A6C0091DA1D /* title1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = title1.mp3; path = ../../../../Music/Logic/Bounces/game/title1.mp3; sourceTree = "<group>"; };
 		5B75E65125CA3E000091DA1D /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hit.mp3; path = ../../../../Music/Logic/Bounces/game/hit.mp3; sourceTree = "<group>"; };
@@ -128,6 +128,7 @@
 		5BAACF0D25CA9AF200B59857 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5B64D59C25C9598700CC7A52 /* UIView+addBackground.swift */,
 				5BAACF0A25CA9AB700B59857 /* UITextField+maxLength.swift */,
 				5BAACF0E25CA9B3500B59857 /* UIViewController+hideKeybord.swift */,
 				5BAACF1125CA9B9B00B59857 /* UIImage+resizeImage.swift */,
@@ -147,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				5B64D5A625C97D3800CC7A52 /* JKAudioPlayer.swift */,
-				5B64D59C25C9598700CC7A52 /* AddBackground.swift */,
 			);
 			path = "Support ";
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 				5BAACF0825CA855E00B59857 /* FirstViewController.swift in Sources */,
 				5B86F62E25C8FC040037D40C /* ViewController.swift in Sources */,
 				5B86F63F25C8FDD60037D40C /* StratViewController.swift in Sources */,
-				5B64D59D25C9598700CC7A52 /* AddBackground.swift in Sources */,
+				5B64D59D25C9598700CC7A52 /* UIView+addBackground.swift in Sources */,
 				5B64D5A725C97D3800CC7A52 /* JKAudioPlayer.swift in Sources */,
 				5B86F64225C8FE6F0037D40C /* PositionViewController.swift in Sources */,
 				5B64D59325C9274300CC7A52 /* GameStartViewController.swift in Sources */,
