@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        overrideUserInterfaceStyle = .light
         titleChara.alpha = 0.0
         UIView.animate(withDuration: 1.0, delay: 1.0, options: [.curveEaseIn], animations: {
             self.titleChara.alpha = 1.0

@@ -22,10 +22,10 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
+        overrideUserInterfaceStyle = .light
         self.view.addBackground(name: "back_title.jpg")
         csvArray = loadCSV(fileName: "position")
-        print(csvArray)
-        // Do any additional setup after loading the view.
         
         self.gameStart.alpha = 0.0
         UIView.animate(withDuration: 2.0, delay: 1.0, options: [.curveEaseIn], animations: {
