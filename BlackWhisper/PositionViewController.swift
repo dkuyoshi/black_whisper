@@ -12,6 +12,7 @@ class PositionViewController: UIViewController ,UITableViewDataSource, UITableVi
     @IBOutlet weak var posTable: UITableView!
     @IBOutlet weak var backButton: UIButton!
     
+    // position image
     let imgArray: NSArray = [
             "goburin", "goburin",
             "goburin", "knight",
@@ -32,6 +33,7 @@ class PositionViewController: UIViewController ,UITableViewDataSource, UITableVi
         // print(csvArray)
         overrideUserInterfaceStyle = .light
         
+        // buttonは最前面に
         self.view.bringSubviewToFront(backButton)
         
         for str in csvArray{
@@ -85,7 +87,7 @@ class PositionViewController: UIViewController ,UITableViewDataSource, UITableVi
     }
     
     func resize(image: UIImage, width: Double) -> UIImage {
-            
+    
         // オリジナル画像のサイズからアスペクト比を計算
         let aspectScale = image.size.height / image.size.width
         

@@ -24,6 +24,7 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
         
         // Do any additional setup after loading the view.
         overrideUserInterfaceStyle = .light
+        
         self.view.addBackground(name: "back_title.jpg")
         csvArray = loadCSV(fileName: "position")
         
@@ -38,19 +39,21 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
+        
             if segue.identifier == "toPos" {
                 let nextView = segue.destination as! PositionViewController
                 nextView.csvArray = csvArray
             }
+        
             if segue.identifier == "toGameStart" {
                 let nextView = segue.destination as! GameStartViewController
                 nextView.csvArray = csvArray
             }
+        
         }
     
     @IBAction func btnAction(sender: UIButton){
-        // print(sender.tag)
+        // music止める
         self.audio.stopMusic()
         self.audio.playSoundEffect(named: "hit.mp3")
     }
@@ -60,6 +63,7 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func backBtnAction(_ sender: Any) {
+        // titleに戻る
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -75,6 +79,7 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
         }
         return csvArray
     }
+    
     /*
     // MARK: - Navigation
 
