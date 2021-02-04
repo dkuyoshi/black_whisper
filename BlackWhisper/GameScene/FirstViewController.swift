@@ -11,6 +11,7 @@ class FirstViewController: UIViewController {
     
     var userNames: [String] = Array(repeating: "", count: 4)
     var csvArray: [String] = []
+    var positionArray: [Int] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,7 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
         print(userNames)
         print(csvArray)
+        print(positionArray)
     }
     
 

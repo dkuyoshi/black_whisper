@@ -23,9 +23,11 @@ class GameStartViewController: UIViewController {
     var userNames: [String] = Array(repeating: "", count: 4)
     var userCheckFlag: [Int] = Array(repeating: 0, count: 4)
     
+    var positionAssignment: [Int] = []
+    var csvArray: [String] = []
+    
     let audio = JKAudioPlayer.sharedInstance()
     
-    var csvArray: [String] = []
     var timer: Timer = Timer()
     
     override func viewDidLoad() {
@@ -46,6 +48,23 @@ class GameStartViewController: UIViewController {
         self.userName2.placeholder = "user name 2"
         self.userName3.placeholder = "user name 3"
         self.userName4.placeholder = "user name 4"
+        
+        // 各ユーザに身分割り当て (csvのindex)
+        self.positionAssignment = self.randIntNoDuplication(start: 0, end: 8, quantity: 4)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+        if segue.identifier == "toFirst" {
+            let nextView = segue.destination as! FirstViewController
+            nextView.userNames = self.userNames
+            nextView.csvArray = self.csvArray
+            nextView.positionArray = self.positionAssignment
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func editUsername(_ sender: UITextField) {
@@ -98,19 +117,6 @@ class GameStartViewController: UIViewController {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
-        if segue.identifier == "toFirst" {
-            let nextView = segue.destination as! FirstViewController
-            nextView.userNames = self.userNames
-            nextView.csvArray = self.csvArray
-        }
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
     @IBAction func kakuteiButton(_ sender: Any) {
             self.view.endEditing(true)
         }
@@ -125,6 +131,19 @@ class GameStartViewController: UIViewController {
     @objc func playBgm(){
         //start back music(自作)
         self.audio.playMusic("talking.mp3")
+    }
+    
+    //重複のない乱数を発生させる
+    private func randIntNoDuplication(start: Int, end: Int, quantity: Int) -> [Int] {
+        var randomIntArray: [Int] = []
+        
+        while randomIntArray.count < quantity{
+            let n: Int = Int.random(in: start..<end+1)
+            if randomIntArray.firstIndex(of: n) == nil{
+                randomIntArray.append(n)
+            }
+        }
+        return randomIntArray
     }
     
     private func validate() -> Bool {
