@@ -56,7 +56,7 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func posBtnAction(sender: UIButton){
-        print(sender.tag)
+        // print(sender.tag)
     }
     
     @IBAction func backBtnAction(_ sender: Any) {

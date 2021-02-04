@@ -219,7 +219,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.14576937100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
-                                <string key="text">ユーザー4人の名前を入力してください(1文字以上10文字以下)</string>
+                                <string key="text">ユーザー4人の名前を入力してください
+(1文字以上10文字以下)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="0.14576937100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -236,7 +237,7 @@
                                 </state>
                                 <connections>
                                     <action selector="startButtonWithSender:" destination="b5o-zn-dm4" eventType="touchUpInside" id="1mY-EW-3ts"/>
-                                    <segue destination="zCw-E3-nQE" kind="presentation" id="4th-rw-1Fj"/>
+                                    <segue destination="zCw-E3-nQE" kind="presentation" identifier="toFirst" id="4th-rw-1Fj"/>
                                 </connections>
                             </button>
                         </subviews>

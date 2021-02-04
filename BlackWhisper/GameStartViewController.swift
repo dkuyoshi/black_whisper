@@ -86,7 +86,7 @@ class GameStartViewController: UIViewController {
                 break
             }
         }
-        print(userNames)
+        // print(userNames)
         if self.fillUserNames(){
             //  スタートボタン有効
             self.startButton.isEnabled = true
@@ -96,6 +96,18 @@ class GameStartViewController: UIViewController {
             self.audio.playSoundEffect(named: "laugh.mp3")
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+        if segue.identifier == "toFirst" {
+            let nextView = segue.destination as! FirstViewController
+            nextView.userNames = self.userNames
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func kakuteiButton(_ sender: Any) {
@@ -122,7 +134,6 @@ class GameStartViewController: UIViewController {
         if aName.count == 0{
             return false
         }
-        
         return true
     }
     
@@ -132,13 +143,9 @@ class GameStartViewController: UIViewController {
                 return false
             }
         }
-        
         return true
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-        }
     /*
     // MARK: - Navigation
 

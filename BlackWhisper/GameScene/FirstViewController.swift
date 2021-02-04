@@ -8,11 +8,14 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    var userNames: [String] = Array(repeating: "", count: 4)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        print(userNames)
     }
     
 
