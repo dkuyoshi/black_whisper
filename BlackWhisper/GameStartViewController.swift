@@ -43,23 +43,26 @@ class GameStartViewController: UIViewController {
         
         self.startButton.isEnabled = false
         self.startButton.alpha = 0
+        self.startButton.layer.cornerRadius = 10.0
         
         self.userName1.placeholder = "user name 1"
         self.userName2.placeholder = "user name 2"
         self.userName3.placeholder = "user name 3"
         self.userName4.placeholder = "user name 4"
         
-        // 各ユーザに身分割り当て (csvのindex)
+        // 各ユーザに身分割り当て (csvのindexをランダムに振り分ける)
         self.positionAssignment = self.randIntNoDuplication(start: 0, end: 8, quantity: 4)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
-        if segue.identifier == "toFirst" {
-            let nextView = segue.destination as! FirstViewController
+        if segue.identifier == "toCheck" {
+            let nextView = segue.destination as! CheckViewController
             nextView.userNames = self.userNames
             nextView.csvArray = self.csvArray
             nextView.positionArray = self.positionAssignment
+        }
+        else{
+            print("ERROR <- Start to First Image")
         }
     }
     
@@ -114,7 +117,6 @@ class GameStartViewController: UIViewController {
             }, completion: nil)
             self.audio.playSoundEffect(named: "laugh.mp3")
         }
-        
     }
     
     @IBAction func kakuteiButton(_ sender: Any) {

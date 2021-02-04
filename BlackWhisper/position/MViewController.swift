@@ -1,25 +1,18 @@
 //
-//  FirstViewController.swift
+//  MViewController.swift
 //  BlackWhisper
 //
-//  Created by Daiki Kuyoshi on 2021/02/03.
+//  Created by Daiki Kuyoshi on 2021/02/04.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController {
-    
-    var userNames: [String] = Array(repeating: "", count: 4)
-    var csvArray: [String] = []
-    var positionArray: [Int] = []
+class MViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
-        print(userNames)
-        print(csvArray)
-        print(positionArray)
     }
     
 

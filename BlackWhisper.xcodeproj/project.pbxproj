@@ -22,12 +22,18 @@
 		5B86F63F25C8FDD60037D40C /* StratViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86F63E25C8FDD60037D40C /* StratViewController.swift */; };
 		5B86F64225C8FE6F0037D40C /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86F64125C8FE6F0037D40C /* PositionViewController.swift */; };
 		5B86F64525C904320037D40C /* position.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5B86F64425C904320037D40C /* position.csv */; };
-		5BAACF0825CA855E00B59857 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF0725CA855E00B59857 /* FirstViewController.swift */; };
+		5BAACF0825CA855E00B59857 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF0725CA855E00B59857 /* CheckViewController.swift */; };
 		5BAACF0B25CA9AB700B59857 /* UITextField+maxLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF0A25CA9AB700B59857 /* UITextField+maxLength.swift */; };
 		5BAACF0F25CA9B3500B59857 /* UIViewController+hideKeybord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF0E25CA9B3500B59857 /* UIViewController+hideKeybord.swift */; };
 		5BAACF1225CA9B9B00B59857 /* UIImage+resizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF1125CA9B9B00B59857 /* UIImage+resizeImage.swift */; };
 		5BAACF1625CB75C100B59857 /* talking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BAACF1525CB75C100B59857 /* talking.mp3 */; };
 		5BAACF1925CB975600B59857 /* laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BAACF1825CB975600B59857 /* laugh.mp3 */; };
+		5BAACF2125CC129300B59857 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2025CC129300B59857 /* StudentViewController.swift */; };
+		5BAACF2425CC168F00B59857 /* ExcellentStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2325CC168F00B59857 /* ExcellentStudentViewController.swift */; };
+		5BAACF2725CC171F00B59857 /* KillerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2625CC171F00B59857 /* KillerViewController.swift */; };
+		5BAACF2A25CC181E00B59857 /* ProffesionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2925CC181E00B59857 /* ProffesionalViewController.swift */; };
+		5BAACF2D25CC18A200B59857 /* MViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2C25CC18A200B59857 /* MViewController.swift */; };
+		5BAACF3025CC192C00B59857 /* ShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF2F25CC192C00B59857 /* ShadowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +54,18 @@
 		5B86F63E25C8FDD60037D40C /* StratViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StratViewController.swift; sourceTree = "<group>"; };
 		5B86F64125C8FE6F0037D40C /* PositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
 		5B86F64425C904320037D40C /* position.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = position.csv; sourceTree = "<group>"; };
-		5BAACF0725CA855E00B59857 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5BAACF0725CA855E00B59857 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		5BAACF0A25CA9AB700B59857 /* UITextField+maxLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+maxLength.swift"; sourceTree = "<group>"; };
 		5BAACF0E25CA9B3500B59857 /* UIViewController+hideKeybord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+hideKeybord.swift"; sourceTree = "<group>"; };
 		5BAACF1125CA9B9B00B59857 /* UIImage+resizeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resizeImage.swift"; sourceTree = "<group>"; };
 		5BAACF1525CB75C100B59857 /* talking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = talking.mp3; path = ../../../../Music/Logic/Bounces/game/talking.mp3; sourceTree = "<group>"; };
 		5BAACF1825CB975600B59857 /* laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = laugh.mp3; path = ../../../../Music/Logic/Bounces/game/laugh.mp3; sourceTree = "<group>"; };
+		5BAACF2025CC129300B59857 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		5BAACF2325CC168F00B59857 /* ExcellentStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcellentStudentViewController.swift; sourceTree = "<group>"; };
+		5BAACF2625CC171F00B59857 /* KillerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillerViewController.swift; sourceTree = "<group>"; };
+		5BAACF2925CC181E00B59857 /* ProffesionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProffesionalViewController.swift; sourceTree = "<group>"; };
+		5BAACF2C25CC18A200B59857 /* MViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MViewController.swift; sourceTree = "<group>"; };
+		5BAACF2F25CC192C00B59857 /* ShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,12 @@
 			isa = PBXGroup;
 			children = (
 				5B86F64425C904320037D40C /* position.csv */,
+				5BAACF2025CC129300B59857 /* StudentViewController.swift */,
+				5BAACF2325CC168F00B59857 /* ExcellentStudentViewController.swift */,
+				5BAACF2625CC171F00B59857 /* KillerViewController.swift */,
+				5BAACF2925CC181E00B59857 /* ProffesionalViewController.swift */,
+				5BAACF2C25CC18A200B59857 /* MViewController.swift */,
+				5BAACF2F25CC192C00B59857 /* ShadowViewController.swift */,
 			);
 			path = position;
 			sourceTree = "<group>";
@@ -139,7 +157,7 @@
 		5BAACF1B25CB994000B59857 /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
-				5BAACF0725CA855E00B59857 /* FirstViewController.swift */,
+				5BAACF0725CA855E00B59857 /* CheckViewController.swift */,
 			);
 			path = GameScene;
 			sourceTree = "<group>";
@@ -228,18 +246,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BAACF0825CA855E00B59857 /* FirstViewController.swift in Sources */,
+				5BAACF0825CA855E00B59857 /* CheckViewController.swift in Sources */,
+				5BAACF2725CC171F00B59857 /* KillerViewController.swift in Sources */,
 				5B86F62E25C8FC040037D40C /* ViewController.swift in Sources */,
 				5B86F63F25C8FDD60037D40C /* StratViewController.swift in Sources */,
+				5BAACF2A25CC181E00B59857 /* ProffesionalViewController.swift in Sources */,
 				5B64D59D25C9598700CC7A52 /* UIView+addBackground.swift in Sources */,
 				5B64D5A725C97D3800CC7A52 /* JKAudioPlayer.swift in Sources */,
+				5BAACF2D25CC18A200B59857 /* MViewController.swift in Sources */,
 				5B86F64225C8FE6F0037D40C /* PositionViewController.swift in Sources */,
 				5B64D59325C9274300CC7A52 /* GameStartViewController.swift in Sources */,
 				5B86F62A25C8FC040037D40C /* AppDelegate.swift in Sources */,
 				5BAACF0F25CA9B3500B59857 /* UIViewController+hideKeybord.swift in Sources */,
+				5BAACF3025CC192C00B59857 /* ShadowViewController.swift in Sources */,
 				5BAACF1225CA9B9B00B59857 /* UIImage+resizeImage.swift in Sources */,
 				5BAACF0B25CA9AB700B59857 /* UITextField+maxLength.swift in Sources */,
+				5BAACF2425CC168F00B59857 /* ExcellentStudentViewController.swift in Sources */,
 				5B86F62C25C8FC040037D40C /* SceneDelegate.swift in Sources */,
+				5BAACF2125CC129300B59857 /* StudentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
