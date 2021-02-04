@@ -98,11 +98,10 @@
 		5B86F62825C8FC040037D40C /* BlackWhisper */ = {
 			isa = PBXGroup;
 			children = (
+				5BAACF1C25CB99DC00B59857 /* Support  */,
 				5BAACF1B25CB994000B59857 /* GameScene */,
 				5BAACF0D25CA9AF200B59857 /* Extensions */,
 				5B75E64D25CA3A490091DA1D /* Resources */,
-				5B64D5A625C97D3800CC7A52 /* JKAudioPlayer.swift */,
-				5B64D59C25C9598700CC7A52 /* AddBackground.swift */,
 				5B86F64725C9070C0037D40C /* position */,
 				5B86F62925C8FC040037D40C /* AppDelegate.swift */,
 				5B86F62B25C8FC040037D40C /* SceneDelegate.swift */,
@@ -142,6 +141,15 @@
 				5BAACF0725CA855E00B59857 /* FirstViewController.swift */,
 			);
 			path = GameScene;
+			sourceTree = "<group>";
+		};
+		5BAACF1C25CB99DC00B59857 /* Support  */ = {
+			isa = PBXGroup;
+			children = (
+				5B64D5A625C97D3800CC7A52 /* JKAudioPlayer.swift */,
+				5B64D59C25C9598700CC7A52 /* AddBackground.swift */,
+			);
+			path = "Support ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
