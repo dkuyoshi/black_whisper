@@ -41,6 +41,11 @@ class GameStartViewController: UIViewController {
         
         self.startButton.isEnabled = false
         self.startButton.alpha = 0
+        
+        self.userName1.placeholder = "user name 1"
+        self.userName2.placeholder = "user name 2"
+        self.userName3.placeholder = "user name 3"
+        self.userName4.placeholder = "user name 4"
     }
     
     @IBAction func editUsername(_ sender: UITextField) {
