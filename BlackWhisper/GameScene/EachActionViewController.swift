@@ -116,10 +116,15 @@ class EachActionViewController: UIViewController {
         
         if self.position == 3{
             let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "excellentActionView") as! ExcellentActionViewController
+            nextViewController.userCheck = self.getName
+            nextViewController.userPositionCheck = myVar.posStringArray[self.getPosition]
             self.present(nextViewController, animated: true, completion: nil)
         }
         else{
             let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "shadowActionView") as! ShadowActionViewController
+            nextViewController.myName = myVar.userNames[myVar.count]
+            nextViewController.changeUserName =  self.getName
+            nextViewController.changeIndex =  self.getPosition
             self.present(nextViewController, animated: true, completion: nil)
         }
     }

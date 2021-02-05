@@ -33,8 +33,9 @@ class KillerActionViewController: UIViewController {
     }
     
     @IBAction func nextButton(_ sender: Any){
-        if myVar.count < 3{
+        if myVar.count < 4{
             let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "checkView") as! CheckViewController
+            nextViewController.modalTransitionStyle = .crossDissolve
             self.present(nextViewController, animated: true, completion: nil)
         }
         else{
