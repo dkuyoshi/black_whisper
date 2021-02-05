@@ -30,6 +30,10 @@
 		5BAACF1925CB975600B59857 /* laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BAACF1825CB975600B59857 /* laugh.mp3 */; };
 		5BAACF3325CC298400B59857 /* GlobalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF3225CC298400B59857 /* GlobalVar.swift */; };
 		5BAACF3625CCE18B00B59857 /* EachActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF3525CCE18B00B59857 /* EachActionViewController.swift */; };
+		5BAACF3A25CD2E9200B59857 /* OtherActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF3925CD2E9200B59857 /* OtherActionViewController.swift */; };
+		5BAACF3D25CD2EB500B59857 /* ShadowActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF3C25CD2EB500B59857 /* ShadowActionViewController.swift */; };
+		5BAACF4225CD313B00B59857 /* KillerActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF4125CD313B00B59857 /* KillerActionViewController.swift */; };
+		5BAACF4725CD326D00B59857 /* ExcellentActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAACF4625CD326D00B59857 /* ExcellentActionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		5BAACF1825CB975600B59857 /* laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = laugh.mp3; path = ../../../../Music/Logic/Bounces/game/laugh.mp3; sourceTree = "<group>"; };
 		5BAACF3225CC298400B59857 /* GlobalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVar.swift; sourceTree = "<group>"; };
 		5BAACF3525CCE18B00B59857 /* EachActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachActionViewController.swift; sourceTree = "<group>"; };
+		5BAACF3925CD2E9200B59857 /* OtherActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherActionViewController.swift; sourceTree = "<group>"; };
+		5BAACF3C25CD2EB500B59857 /* ShadowActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowActionViewController.swift; sourceTree = "<group>"; };
+		5BAACF4125CD313B00B59857 /* KillerActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillerActionViewController.swift; sourceTree = "<group>"; };
+		5BAACF4625CD326D00B59857 /* ExcellentActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcellentActionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,7 @@
 				5B86F62B25C8FC040037D40C /* SceneDelegate.swift */,
 				5B86F62D25C8FC040037D40C /* ViewController.swift */,
 				5B86F62F25C8FC040037D40C /* Main.storyboard */,
+				5BAACF4125CD313B00B59857 /* KillerActionViewController.swift */,
 				5B64D59225C9274300CC7A52 /* GameStartViewController.swift */,
 				5B86F64125C8FE6F0037D40C /* PositionViewController.swift */,
 				5B86F63E25C8FDD60037D40C /* StratViewController.swift */,
@@ -146,6 +155,9 @@
 			children = (
 				5BAACF0725CA855E00B59857 /* CheckViewController.swift */,
 				5BAACF3525CCE18B00B59857 /* EachActionViewController.swift */,
+				5BAACF4625CD326D00B59857 /* ExcellentActionViewController.swift */,
+				5BAACF3925CD2E9200B59857 /* OtherActionViewController.swift */,
+				5BAACF3C25CD2EB500B59857 /* ShadowActionViewController.swift */,
 			);
 			path = GameScene;
 			sourceTree = "<group>";
@@ -235,18 +247,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BAACF0825CA855E00B59857 /* CheckViewController.swift in Sources */,
+				5BAACF4725CD326D00B59857 /* ExcellentActionViewController.swift in Sources */,
 				5BAACF3325CC298400B59857 /* GlobalVar.swift in Sources */,
 				5B86F62E25C8FC040037D40C /* ViewController.swift in Sources */,
 				5B86F63F25C8FDD60037D40C /* StratViewController.swift in Sources */,
 				5B64D59D25C9598700CC7A52 /* UIView+addBackground.swift in Sources */,
 				5B64D5A725C97D3800CC7A52 /* JKAudioPlayer.swift in Sources */,
+				5BAACF3A25CD2E9200B59857 /* OtherActionViewController.swift in Sources */,
 				5B86F64225C8FE6F0037D40C /* PositionViewController.swift in Sources */,
 				5B64D59325C9274300CC7A52 /* GameStartViewController.swift in Sources */,
 				5B86F62A25C8FC040037D40C /* AppDelegate.swift in Sources */,
+				5BAACF3D25CD2EB500B59857 /* ShadowActionViewController.swift in Sources */,
 				5BAACF0F25CA9B3500B59857 /* UIViewController+hideKeybord.swift in Sources */,
 				5BAACF1225CA9B9B00B59857 /* UIImage+resizeImage.swift in Sources */,
 				5BAACF0B25CA9AB700B59857 /* UITextField+maxLength.swift in Sources */,
 				5B86F62C25C8FC040037D40C /* SceneDelegate.swift in Sources */,
+				5BAACF4225CD313B00B59857 /* KillerActionViewController.swift in Sources */,
 				5BAACF3625CCE18B00B59857 /* EachActionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -273,6 +273,36 @@
             </objects>
             <point key="canvasLocation" x="713.04347826086962" y="863.83928571428567"/>
         </scene>
+        <!--Other Action View Controller-->
+        <scene sceneID="dRV-zO-Eft">
+            <objects>
+                <viewController storyboardIdentifier="otherActionView" id="qG7-XM-z1E" customClass="OtherActionViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1qN-c6-Sqo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="U5b-Gb-AEE"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pS-zL-W9J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409" y="2500"/>
+        </scene>
+        <!--Sadow Action View Controller-->
+        <scene sceneID="60Z-Kw-920">
+            <objects>
+                <viewController storyboardIdentifier="realActionView" id="dyH-h0-Iel" customClass="SadowActionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jPW-gW-G9O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ubn-4o-0dI"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpi-yJ-dIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="2500"/>
+        </scene>
         <!--Each Action View Controller-->
         <scene sceneID="EN9-Lt-xNC">
             <objects>
@@ -309,8 +339,8 @@
                                     <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                 </variation>
                                 <connections>
+                                    <action selector="checkButtonAction:" destination="iTI-ER-6Ay" eventType="touchUpInside" id="bN1-7h-xcd"/>
                                     <action selector="pushCheckButtonWithSender:" destination="zCw-E3-nQE" eventType="touchUpInside" id="mHU-WE-AFJ"/>
-                                    <segue destination="zCw-E3-nQE" kind="presentation" identifier="toBack" modalTransitionStyle="crossDissolve" id="d8q-7V-rEb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="さんは" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMR-Uv-1UP">
@@ -349,7 +379,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dek-Wd-Ai5">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dek-Wd-Ai5">
                                 <rect key="frame" x="29" y="610" width="100" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -357,8 +387,11 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectButton:" destination="iTI-ER-6Ay" eventType="touchUpInside" id="Fs2-NN-CCJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ak-uO-wPT">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ak-uO-wPT">
                                 <rect key="frame" x="157" y="610" width="100" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -366,8 +399,11 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectButton:" destination="iTI-ER-6Ay" eventType="touchUpInside" id="4cJ-vg-u39"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWE-NG-2wR">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWE-NG-2wR">
                                 <rect key="frame" x="282" y="610" width="100" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -375,6 +411,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectButton:" destination="iTI-ER-6Ay" eventType="touchUpInside" id="roM-e0-omJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qKa-gd-Lcg"/>
@@ -396,10 +435,40 @@
             </objects>
             <point key="canvasLocation" x="711.59420289855075" y="2499.7767857142858"/>
         </scene>
+        <!--Killer Action View Controller-->
+        <scene sceneID="p0m-nu-Vv8">
+            <objects>
+                <viewController storyboardIdentifier="killerActionView" id="8kC-up-hI1" customClass="KillerActionViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qhd-om-22l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="L60-qd-hl8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6V-EX-Ubr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="3226"/>
+        </scene>
+        <!--Excellent View Controller-->
+        <scene sceneID="Eqf-1g-aTs">
+            <objects>
+                <viewController storyboardIdentifier="excellentActionView" id="8Yd-B6-0e1" customClass="ExcellentViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qnj-S1-zhW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sgZ-1c-88E"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7k-1B-Cxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="3226"/>
+        </scene>
         <!--Check View Controller-->
         <scene sceneID="vAH-Fz-2oA">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="zCw-E3-nQE" userLabel="Check View Controller" customClass="CheckViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="checkView" modalPresentationStyle="fullScreen" id="zCw-E3-nQE" userLabel="Check View Controller" customClass="CheckViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NvF-aD-Yoe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,9 +615,6 @@
             <point key="canvasLocation" x="1410.144927536232" y="87.723214285714278"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="d8q-7V-rEb"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="ahriman" width="100" height="100"/>

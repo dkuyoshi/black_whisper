@@ -27,6 +27,9 @@ class EachActionViewController: UIViewController {
     
     var myVar = GlobalVar.shared
     
+    var getName: String = ""
+    var getPosition: Int = -1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -86,7 +89,33 @@ class EachActionViewController: UIViewController {
             print("COUNT ERROR")
             break
         }
-        print(myVar.userNames[self.selectUsersArray[0]])
+        // print(myVar.userNames[self.selectUsersArray[0]])
+    }
+    
+    @IBAction func selectButton(_ sender: Any) {
+        let button: UIButton = sender as! UIButton
+        
+        switch button.tag {
+        case 1:
+            self.getName = myVar.userNames[self.selectUsersArray[0]]
+            self.getPosition = myVar.positionArray[self.selectUsersArray[0]]
+        case 2:
+            self.getName = myVar.userNames[self.selectUsersArray[1]]
+            self.getPosition = myVar.positionArray[self.selectUsersArray[1]]
+        case 3:
+            self.getName = myVar.userNames[self.selectUsersArray[2]]
+            self.getPosition = myVar.positionArray[self.selectUsersArray[2]]
+        default:
+            print("TAG ERROR")
+        }
+        
+        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "realActionView") as! RealActionViewController
+        self.present(nextViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func checkButtonAction(_ sender: Any){
+        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "fakeActionView") as! FakeActionViewController
+        self.present(nextViewController, animated: true, completion: nil)
     }
     
     private func actionStudent(){
