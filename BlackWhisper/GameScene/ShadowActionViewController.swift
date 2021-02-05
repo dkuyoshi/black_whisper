@@ -11,10 +11,12 @@ class ShadowActionViewController: UIViewController {
     @IBOutlet var myLabel: UILabel!
     @IBOutlet var yourLabel: UILabel!
     @IBOutlet var nextButton: UIButton!
+    @IBOutlet var yourName: UILabel!
     
     var myVar = GlobalVar.shared
     
-    var changeIndex: Int = -1
+    var changePosIndex: Int = -1
+    var changeUserIndex: Int = -1
     var myName: String = ""
     var changeUserName: String = ""
     
@@ -23,18 +25,22 @@ class ShadowActionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.myLabel.text = myName
-        self.yourLabel.text = changeUserName
+        self.yourLabel.text = myVar.posStringArray[changePosIndex]
+        self.yourName.text = changeUserName
         print(myVar.positionArray)
+        self.changePositionIndex()
     }
     
     func changePositionIndex(){
+        print(changeUserIndex)
         let tmp = myVar.positionArray[myVar.count]
-        myVar.positionArray[myVar.count] = myVar.positionArray[changeIndex]
-        myVar.positionArray[changeIndex] = tmp
+        myVar.positionArray[myVar.count] = myVar.positionArray[changeUserIndex]
+        myVar.positionArray[changeUserIndex] = tmp
         print(myVar.positionArray)
     }
     
     @IBAction func nextButton(_ sender: Any){
+        myVar.count += 1
         if myVar.count < 4{
             let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "checkView") as! CheckViewController
             nextViewController.modalTransitionStyle = .crossDissolve

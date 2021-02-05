@@ -29,6 +29,7 @@ class EachActionViewController: UIViewController {
     
     var getName: String = ""
     var getPosition: Int = -1
+    var selectUserIndex: Int = -1
     
     // 殺人者に仲間がいるかどうかのチェック
     var teamFlag: Int = 0
@@ -104,12 +105,15 @@ class EachActionViewController: UIViewController {
         case 1:
             self.getName = myVar.userNames[self.selectUsersArray[0]]
             self.getPosition = myVar.positionArray[self.selectUsersArray[0]]
+            self.selectUserIndex = self.selectUsersArray[0]
         case 2:
             self.getName = myVar.userNames[self.selectUsersArray[1]]
             self.getPosition = myVar.positionArray[self.selectUsersArray[1]]
+            self.selectUserIndex = self.selectUsersArray[1]
         case 3:
             self.getName = myVar.userNames[self.selectUsersArray[2]]
             self.getPosition = myVar.positionArray[self.selectUsersArray[2]]
+            self.selectUserIndex = self.selectUsersArray[2]
         default:
             print("TAG ERROR")
         }
@@ -124,7 +128,8 @@ class EachActionViewController: UIViewController {
             let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "shadowActionView") as! ShadowActionViewController
             nextViewController.myName = myVar.userNames[myVar.count]
             nextViewController.changeUserName =  self.getName
-            nextViewController.changeIndex =  self.getPosition
+            nextViewController.changePosIndex =  self.getPosition
+            nextViewController.changeUserIndex = self.selectUserIndex
             self.present(nextViewController, animated: true, completion: nil)
         }
     }

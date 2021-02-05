@@ -32,7 +32,7 @@ class CheckViewController: UIViewController {
     }
     
     @IBAction func pushCheckButton(sender: UIButton){
-        myVar.count += 1
+        // myVar.count += 1
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
