@@ -139,7 +139,7 @@ class GameStartViewController: UIViewController {
     
     @objc func playBgm(){
         //start back music(自作)
-        self.audio.playMusic("talking.mp3")
+        // self.audio.playMusic("talking.mp3")
     }
     
     //重複のない乱数を発生させる

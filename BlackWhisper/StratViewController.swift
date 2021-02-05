@@ -35,10 +35,6 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
         UIView.animate(withDuration: 2.0, delay: 1.0, options: [.curveEaseIn], animations: {
             self.gameStart.alpha = 1.0
         }, completion: nil)
-        
-        //start back music(自作)
-        self.audio.playMusic("title1.mp3")
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -56,8 +52,6 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
         }
     
     @IBAction func btnAction(sender: UIButton){
-        // music止める
-        self.audio.stopMusic()
         self.audio.playSoundEffect(named: "hit.mp3")
     }
     
