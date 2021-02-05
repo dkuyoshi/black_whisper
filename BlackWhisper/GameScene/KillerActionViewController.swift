@@ -1,5 +1,5 @@
 //
-//  ¥FakeActionViewController.swift
+//  KillerActionViewController.swift
 //  BlackWhisper
 //
 //  Created by Daiki Kuyoshi on 2021/02/05.
@@ -7,19 +7,29 @@
 
 import UIKit
 
-class OtherActionViewController: UIViewController {
-    
+class KillerActionViewController: UIViewController {
+    @IBOutlet var teanLabel: UILabel!
+    @IBOutlet var partnerLabel: UILabel!
     @IBOutlet var nextButton: UIButton!
     
+    var partnerName: String = ""
+    var partnerFlag: Int = 0
+    
     var myVar = GlobalVar.shared
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         self.nextButton.layer.cornerRadius = 10.0
         
+        if self.partnerFlag==0{
+            self.partnerLabel.isHidden = true
+        }
+        else{
+            self.teanLabel.text = "Your partner is ..."
+            self.partnerLabel.text = self.partnerName
+        }
     }
     
     @IBAction func nextButton(_ sender: Any){
@@ -31,7 +41,7 @@ class OtherActionViewController: UIViewController {
             print("OKOK")
         }
     }
-    
+
     /*
     // MARK: - Navigation
 

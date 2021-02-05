@@ -276,22 +276,54 @@
         <!--Other Action View Controller-->
         <scene sceneID="dRV-zO-Eft">
             <objects>
-                <viewController storyboardIdentifier="otherActionView" id="qG7-XM-z1E" customClass="OtherActionViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="otherActionView" modalPresentationStyle="fullScreen" id="qG7-XM-z1E" customClass="OtherActionViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1qN-c6-Sqo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hD-hk-mBP">
+                                <rect key="frame" x="54" y="253" width="291" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Do your best to make sure your team wins.
+Don't hesitate to tell a lot of lies. </string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngM-1T-PIz">
+                                <rect key="frame" x="156" y="643" width="88" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="1" green="0.12538443029999999" blue="0.039663959280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nextButton:" destination="qG7-XM-z1E" eventType="touchUpInside" id="Ytv-dc-Xsx"/>
+                                    <action selector="pushCheckButtonWithSender:" destination="zCw-E3-nQE" eventType="touchUpInside" id="pmN-aT-aIP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="U5b-Gb-AEE"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="ngM-1T-PIz" id="5yl-EL-Xk3"/>
+                        <segue destination="zCw-E3-nQE" kind="presentation" modalTransitionStyle="crossDissolve" id="h9w-me-17j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pS-zL-W9J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="2500"/>
+            <point key="canvasLocation" x="-410.14492753623193" y="2499.7767857142858"/>
         </scene>
         <!--Sadow Action View Controller-->
         <scene sceneID="60Z-Kw-920">
             <objects>
-                <viewController storyboardIdentifier="realActionView" id="dyH-h0-Iel" customClass="SadowActionViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="realActionView" modalPresentationStyle="fullScreen" id="dyH-h0-Iel" customClass="SadowActionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jPW-gW-G9O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -366,14 +398,14 @@
                                 <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-SN-pQl">
-                                <rect key="frame" x="20" y="362" width="374" height="35"/>
+                                <rect key="frame" x="29" y="362" width="353" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B80-Vk-ZtZ">
-                                <rect key="frame" x="20" y="405" width="374" height="35"/>
+                                <rect key="frame" x="29" y="405" width="353" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -429,31 +461,72 @@
                         <outlet property="text1" destination="3Vb-SN-pQl" id="bsf-6c-0ue"/>
                         <outlet property="text2" destination="B80-Vk-ZtZ" id="FgL-zn-J0O"/>
                         <outlet property="userLabel" destination="zOx-Eu-zJj" id="qac-cO-WYn"/>
+                        <segue destination="8kC-up-hI1" kind="presentation" modalTransitionStyle="crossDissolve" id="aX7-8r-vhe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bC3-Si-Xak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711.59420289855075" y="2499.7767857142858"/>
+            <point key="canvasLocation" x="714" y="2513"/>
         </scene>
         <!--Killer Action View Controller-->
         <scene sceneID="p0m-nu-Vv8">
             <objects>
-                <viewController storyboardIdentifier="killerActionView" id="8kC-up-hI1" customClass="KillerActionViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="killerActionView" modalPresentationStyle="fullScreen" id="8kC-up-hI1" customClass="KillerActionViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhd-om-22l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You don't have any friends." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-gB-69C">
+                                <rect key="frame" x="43" y="178" width="329" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fm-oW-Gen">
+                                <rect key="frame" x="98" y="308" width="200" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.14576937100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn3-gl-caA">
+                                <rect key="frame" x="163" y="662" width="88" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="1" green="0.12538443029999999" blue="0.039663959280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nextButton:" destination="qG7-XM-z1E" eventType="touchUpInside" id="Vbu-f0-PgO"/>
+                                    <action selector="nextButton:" destination="8kC-up-hI1" eventType="touchUpInside" id="ehj-jw-hND"/>
+                                    <action selector="pushCheckButtonWithSender:" destination="zCw-E3-nQE" eventType="touchUpInside" id="CL6-v8-WlV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="L60-qd-hl8"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="kn3-gl-caA" id="zDP-Pt-zq5"/>
+                        <outlet property="partnerLabel" destination="6Fm-oW-Gen" id="FDJ-Ui-vaq"/>
+                        <outlet property="teanLabel" destination="Etu-gB-69C" id="NF0-LS-QZ9"/>
+                        <segue destination="zCw-E3-nQE" kind="presentation" modalTransitionStyle="crossDissolve" id="eug-hS-iKx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6V-EX-Ubr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="3226"/>
+            <point key="canvasLocation" x="35" y="3226"/>
         </scene>
-        <!--Excellent View Controller-->
+        <!--Excellent Action View Controller-->
         <scene sceneID="Eqf-1g-aTs">
             <objects>
-                <viewController storyboardIdentifier="excellentActionView" id="8Yd-B6-0e1" customClass="ExcellentViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="excellentActionView" modalPresentationStyle="fullScreen" id="8Yd-B6-0e1" customClass="ExcellentActionViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qnj-S1-zhW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -615,6 +688,10 @@
             <point key="canvasLocation" x="1410.144927536232" y="87.723214285714278"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vpo-kh-oQK"/>
+        <segue reference="eug-hS-iKx"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="ahriman" width="100" height="100"/>

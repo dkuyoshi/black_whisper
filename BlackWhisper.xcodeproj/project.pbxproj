@@ -119,7 +119,6 @@
 				5B86F62B25C8FC040037D40C /* SceneDelegate.swift */,
 				5B86F62D25C8FC040037D40C /* ViewController.swift */,
 				5B86F62F25C8FC040037D40C /* Main.storyboard */,
-				5BAACF4125CD313B00B59857 /* KillerActionViewController.swift */,
 				5B64D59225C9274300CC7A52 /* GameStartViewController.swift */,
 				5B86F64125C8FE6F0037D40C /* PositionViewController.swift */,
 				5B86F63E25C8FDD60037D40C /* StratViewController.swift */,
@@ -156,6 +155,7 @@
 				5BAACF0725CA855E00B59857 /* CheckViewController.swift */,
 				5BAACF3525CCE18B00B59857 /* EachActionViewController.swift */,
 				5BAACF4625CD326D00B59857 /* ExcellentActionViewController.swift */,
+				5BAACF4125CD313B00B59857 /* KillerActionViewController.swift */,
 				5BAACF3925CD2E9200B59857 /* OtherActionViewController.swift */,
 				5BAACF3C25CD2EB500B59857 /* ShadowActionViewController.swift */,
 			);

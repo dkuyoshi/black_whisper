@@ -30,6 +30,10 @@ class EachActionViewController: UIViewController {
     var getName: String = ""
     var getPosition: Int = -1
     
+    // 殺人者に仲間がいるかどうかのチェック
+    var teamFlag: Int = 0
+    var killerPartnerName: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -75,6 +79,7 @@ class EachActionViewController: UIViewController {
         }
     }
     
+    
     private func userSelector(){
         switch myVar.count {
         case 0:
@@ -109,13 +114,27 @@ class EachActionViewController: UIViewController {
             print("TAG ERROR")
         }
         
-        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "realActionView") as! RealActionViewController
-        self.present(nextViewController, animated: true, completion: nil)
+        if self.position == 3{
+            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "excellentActionView") as! ExcellentActionViewController
+            self.present(nextViewController, animated: true, completion: nil)
+        }
+        else{
+            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "shadowActionView") as! ShadowActionViewController
+            self.present(nextViewController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func checkButtonAction(_ sender: Any){
-        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "fakeActionView") as! FakeActionViewController
-        self.present(nextViewController, animated: true, completion: nil)
+        if (self.position == 4) || (self.position == 5){
+            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "killerActionView") as! KillerActionViewController
+            nextViewController.partnerName = self.killerPartnerName
+            nextViewController.partnerFlag = self.teamFlag
+            self.present(nextViewController, animated: true, completion: nil)
+        }
+        else{
+            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "otherActionView") as! OtherActionViewController
+            self.present(nextViewController, animated: true, completion: nil)
+        }
     }
     
     private func actionStudent(){
@@ -123,7 +142,6 @@ class EachActionViewController: UIViewController {
         
         self.text1.text = myVar.text1Array[0]
         self.text2.text = myVar.text2Array[0]
-        
     }
     
     private func actionExcellent(){
@@ -151,6 +169,30 @@ class EachActionViewController: UIViewController {
     }
     
     private func actionKiller(){
+        
+        func killerTeamCheck() -> Int{
+            var index: Int = 0
+            for i in myVar.positionArray{
+                if i != self.position{
+                    if (i==4) || (i==5){
+                        return index
+                    }
+                }
+                index += 1
+            }
+            return -1
+        }
+        
+        let teamCheckInt: Int = killerTeamCheck()
+            
+        if teamCheckInt < 0{
+            self.teamFlag = 0
+        }
+        else{
+            self.teamFlag = 1
+            self.killerPartnerName = myVar.userNames[teamCheckInt]
+        }
+        
         self.teamLabel.text = "犯人チーム"
         self.teamLabel.backgroundColor = .red
         
