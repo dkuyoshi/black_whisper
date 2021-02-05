@@ -18,6 +18,8 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
     let audio = JKAudioPlayer.sharedInstance()
     
     var csvArray: [String] = []
+    
+    var myVar = GlobalVar.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,15 +29,12 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
         
         self.view.addBackground(name: "back_title.jpg")
         csvArray = loadCSV(fileName: "position")
+        myVar.csvArray = csvArray
         
         self.gameStart.alpha = 0.0
         UIView.animate(withDuration: 2.0, delay: 1.0, options: [.curveEaseIn], animations: {
             self.gameStart.alpha = 1.0
         }, completion: nil)
-        
-        //start back music(自作)
-        self.audio.playMusic("title1.mp3")
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -53,8 +52,6 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
         }
     
     @IBAction func btnAction(sender: UIButton){
-        // music止める
-        self.audio.stopMusic()
         self.audio.playSoundEffect(named: "hit.mp3")
     }
     

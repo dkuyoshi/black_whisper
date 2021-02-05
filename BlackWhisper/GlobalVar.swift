@@ -16,4 +16,8 @@ open class GlobalVar {
     var userNames: [String] = Array(repeating: "", count: 4)
     var positionArray: [Int] = []
     var csvArray: [String] = []
+    
+    var posStringArray : [String] = []
+    var text1Array : [String] = []
+    var text2Array : [String] = []
 }
