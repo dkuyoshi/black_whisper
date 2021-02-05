@@ -25,6 +25,8 @@ class PositionViewController: UIViewController ,UITableViewDataSource, UITableVi
     var label3Array : [String] = []
     
     var csvArray: [String] = []
+    
+    var myVar = GlobalVar.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,6 @@ class PositionViewController: UIViewController ,UITableViewDataSource, UITableVi
             label2Array.append(arr[1])
             label3Array.append(arr[2])
         }
-        
     }
     
     func tableView(_ table: UITableView,

@@ -54,6 +54,9 @@ class GameStartViewController: UIViewController {
         
         // 各ユーザに身分割り当て (csvのindexをランダムに振り分ける)
         self.positionAssignment = self.randIntNoDuplication(start: 0, end: 8, quantity: 4)
+        
+        // CSVを切り出して使いやすいように格納しておく
+        self.splitGlobalCSV()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -170,6 +173,15 @@ class GameStartViewController: UIViewController {
             }
         }
         return true
+    }
+    
+    private func splitGlobalCSV(){
+        for str in csvArray{
+            let arr: [String] = str.components(separatedBy: ", ")
+            myVar.posStringArray.append(arr[0])
+            myVar.text1Array.append(arr[1])
+            myVar.text2Array.append(arr[2])
+        }
     }
     
     /*

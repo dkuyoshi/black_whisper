@@ -18,6 +18,8 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
     let audio = JKAudioPlayer.sharedInstance()
     
     var csvArray: [String] = []
+    
+    var myVar = GlobalVar.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,7 @@ class StratViewController: UIViewController, AVAudioPlayerDelegate {
         
         self.view.addBackground(name: "back_title.jpg")
         csvArray = loadCSV(fileName: "position")
+        myVar.csvArray = csvArray
         
         self.gameStart.alpha = 0.0
         UIView.animate(withDuration: 2.0, delay: 1.0, options: [.curveEaseIn], animations: {
