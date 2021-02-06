@@ -82,6 +82,7 @@ class PostViewController: UIViewController {
         else{
             print(self.postTargetCount)
             let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "resultView") as! ResultViewController
+            nextViewController.postTargetCount = self.postTargetCount
             nextViewController.modalTransitionStyle = .crossDissolve
             self.present(nextViewController, animated: true, completion: nil)
         }
