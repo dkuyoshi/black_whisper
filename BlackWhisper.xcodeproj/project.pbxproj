@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2E477025CE1C5100B2EA4F /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E476F25CE1C5100B2EA4F /* TimeViewController.swift */; };
+		5B2E477425CE2CC900B2EA4F /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E477325CE2CC900B2EA4F /* PostViewController.swift */; };
+		5B2E477725CE355900B2EA4F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E477625CE355900B2EA4F /* ResultViewController.swift */; };
 		5B51D3BD25CA754700DFF779 /* scary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B51D3BC25CA754700DFF779 /* scary.mp3 */; };
 		5B64D59325C9274300CC7A52 /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D59225C9274300CC7A52 /* GameStartViewController.swift */; };
 		5B64D59D25C9598700CC7A52 /* UIView+addBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D59C25C9598700CC7A52 /* UIView+addBackground.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B2E476F25CE1C5100B2EA4F /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		5B2E477325CE2CC900B2EA4F /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		5B2E477625CE355900B2EA4F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		5B51D3BC25CA754700DFF779 /* scary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = scary.mp3; path = ../../../../Music/Logic/Bounces/game/scary.mp3; sourceTree = "<group>"; };
 		5B64D59225C9274300CC7A52 /* GameStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
 		5B64D59C25C9598700CC7A52 /* UIView+addBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBackground.swift"; sourceTree = "<group>"; };
@@ -157,7 +163,10 @@
 				5BAACF4625CD326D00B59857 /* ExcellentActionViewController.swift */,
 				5BAACF4125CD313B00B59857 /* KillerActionViewController.swift */,
 				5BAACF3925CD2E9200B59857 /* OtherActionViewController.swift */,
+				5B2E476F25CE1C5100B2EA4F /* TimeViewController.swift */,
 				5BAACF3C25CD2EB500B59857 /* ShadowActionViewController.swift */,
+				5B2E477325CE2CC900B2EA4F /* PostViewController.swift */,
+				5B2E477625CE355900B2EA4F /* ResultViewController.swift */,
 			);
 			path = GameScene;
 			sourceTree = "<group>";
@@ -246,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2E477025CE1C5100B2EA4F /* TimeViewController.swift in Sources */,
 				5BAACF0825CA855E00B59857 /* CheckViewController.swift in Sources */,
+				5B2E477725CE355900B2EA4F /* ResultViewController.swift in Sources */,
 				5BAACF4725CD326D00B59857 /* ExcellentActionViewController.swift in Sources */,
 				5BAACF3325CC298400B59857 /* GlobalVar.swift in Sources */,
+				5B2E477425CE2CC900B2EA4F /* PostViewController.swift in Sources */,
 				5B86F62E25C8FC040037D40C /* ViewController.swift in Sources */,
 				5B86F63F25C8FDD60037D40C /* StratViewController.swift in Sources */,
 				5B64D59D25C9598700CC7A52 /* UIView+addBackground.swift in Sources */,

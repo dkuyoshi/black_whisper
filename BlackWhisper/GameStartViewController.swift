@@ -131,6 +131,7 @@ class GameStartViewController: UIViewController {
         }
     
     @IBAction func startButton(sender: UIButton){
+        self.timer.invalidate()
         //　ミュージックストップ
         self.audio.stopMusic()
         //　アクセント

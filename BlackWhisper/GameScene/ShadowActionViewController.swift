@@ -47,7 +47,9 @@ class ShadowActionViewController: UIViewController {
             self.present(nextViewController, animated: true, completion: nil)
         }
         else{
-            print("OKOK")
+            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "timeView") as! TimeViewController
+            nextViewController.modalTransitionStyle = .crossDissolve
+            self.present(nextViewController, animated: true, completion: nil)
         }
     }
 
