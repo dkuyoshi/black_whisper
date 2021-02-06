@@ -750,9 +750,89 @@ Don't hesitate to tell a lot of lies. </string>
                     <view key="view" contentMode="scaleToFill" id="z8A-xs-e0P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="is DEAD!!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmY-eW-gzF">
+                                <rect key="frame" x="65" y="147" width="284" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="is WON!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC3-QN-sTP">
+                                <rect key="frame" x="65" y="441" width="284" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="46"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWE-Hi-IvD">
+                                <rect key="frame" x="89" y="371" width="237" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="highlightedColor" systemColor="systemGroupedBackgroundColor"/>
+                                <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCi-6O-3vX">
+                                <rect key="frame" x="175" y="243" width="65" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="OK!!">
+                                    <color key="titleColor" red="1" green="0.12538443029999999" blue="0.039663959280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nextButton:" destination="8kC-up-hI1" eventType="touchUpInside" id="5Y4-Ia-Pis"/>
+                                    <action selector="nextButton:" destination="8Yd-B6-0e1" eventType="touchUpInside" id="PJI-8q-k2d"/>
+                                    <action selector="nextButton:" destination="qG7-XM-z1E" eventType="touchUpInside" id="XWO-TJ-eYG"/>
+                                    <action selector="okButton:" destination="dC8-xa-ocK" eventType="touchUpInside" id="91k-gr-LuB"/>
+                                    <action selector="pushCheckButtonWithSender:" destination="zCw-E3-nQE" eventType="touchUpInside" id="Fll-RM-qzi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jay-Ed-fQ5">
+                                <rect key="frame" x="65" y="599" width="295" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="GO BACK TITLE!">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nextButton:" destination="qG7-XM-z1E" eventType="touchUpInside" id="6mV-ET-int"/>
+                                    <action selector="nextButton:" destination="8kC-up-hI1" eventType="touchUpInside" id="UPc-bL-khT"/>
+                                    <action selector="nextButton:" destination="8Yd-B6-0e1" eventType="touchUpInside" id="fUK-HQ-iVo"/>
+                                    <action selector="okButton:" destination="dC8-xa-ocK" eventType="touchUpInside" id="0UT-j7-daI"/>
+                                    <action selector="pushCheckButtonWithSender:" destination="zCw-E3-nQE" eventType="touchUpInside" id="3bH-O8-2f5"/>
+                                    <action selector="titleButton:" destination="dC8-xa-ocK" eventType="touchUpInside" id="IaI-VN-Bce"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFP-tK-TUH">
+                                <rect key="frame" x="65" y="78" width="284" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bk2-ez-8Og"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="deathName" destination="AFP-tK-TUH" id="vQm-Ie-tVB"/>
+                        <outlet property="isDEAD" destination="DmY-eW-gzF" id="WfX-zS-Ygi"/>
+                        <outlet property="isWON" destination="tC3-QN-sTP" id="E5S-oL-XJt"/>
+                        <outlet property="okButton" destination="LCi-6O-3vX" id="PnZ-2p-ott"/>
+                        <outlet property="teamLabel" destination="mWE-Hi-IvD" id="Ks5-f7-kTf"/>
+                        <outlet property="titleButton" destination="Jay-Ed-fQ5" id="SZh-nq-7is"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Mt-aP-Qoq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -990,6 +1070,9 @@ Don't hesitate to tell a lot of lies. </string>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
