@@ -9,23 +9,26 @@ import UIKit
 
 class PostViewController: UIViewController {
     
-    @IBOutlet var onButton: UIButton!
     @IBOutlet var yourName: UILabel!
+
+    @IBOutlet var onButton: UIButton!
     @IBOutlet var centerButton: UIButton!
-    @IBOutlet var underButton: UIButton!
+    @IBOutlet var underBUtton: UIButton!
     
     var myVar = GlobalVar.shared
     
     var count: Int = 0
     var selectUsersArray: [Int] = []
-    
     var postTargetCount: [Int] = [0, 0, 0, 0]
+    
+    let audio = JKAudioPlayer.sharedInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
         
         // default
+        print(myVar.userNames)
         self.textChange()
     }
     
@@ -48,14 +51,18 @@ class PostViewController: UIViewController {
     
     private func textChange(){
         self.userSelector()
+        print(self.count)
+        print(self.selectUsersArray)
         self.yourName.text = myVar.userNames[self.count]
-        self.onButton.titleLabel?.text = myVar.userNames[self.selectUsersArray[0]]
-        self.centerButton.titleLabel?.text = myVar.userNames[self.selectUsersArray[1]]
-        self.underButton.titleLabel?.text = myVar.userNames[self.selectUsersArray[2]]
+        self.onButton.setTitle(myVar.userNames[self.selectUsersArray[0]], for: .normal)
+        self.centerButton.setTitle(myVar.userNames[self.selectUsersArray[1]], for: .normal)
+        self.underBUtton.setTitle(myVar.userNames[self.selectUsersArray[2]], for: .normal)
     }
     
     @IBAction func selectButton(_ sender: Any) {
         let button: UIButton = sender as! UIButton
+        // アクセント
+        self.audio.playSoundEffect(named: "hit.mp3")
         
         switch button.tag {
         case 1:
@@ -68,12 +75,13 @@ class PostViewController: UIViewController {
             print("TAG ERROR")
         }
         
+        self.count += 1
         if self.count < 4{
-            self.count += 1
             self.textChange()
         }
         else{
-            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "postView") as! PostViewController
+            print(self.postTargetCount)
+            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "resultView") as! ResultViewController
             nextViewController.modalTransitionStyle = .crossDissolve
             self.present(nextViewController, animated: true, completion: nil)
         }

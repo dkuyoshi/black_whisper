@@ -24,7 +24,7 @@ class TimeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.timeLabel = UILabel()
-        self.timeLabel.frame = CGRect(x:200,y:300,width:100,height:100)
+        self.timeLabel.frame = CGRect(x:120,y:300,width:100,height:100)
         self.timeLabel.font = UIFont.systemFont(ofSize: 50)
         self.timeLabel.textAlignment = .center
         self.timeLabel.textColor = .white
@@ -32,7 +32,7 @@ class TimeViewController: UIViewController {
         
         // 区切り
         self.splitTime = UILabel()
-        self.splitTime.frame = CGRect(x:200,y:300,width:100,height:100)
+        self.splitTime.frame = CGRect(x:150,y:300,width:100,height:100)
         self.splitTime.font = UIFont.systemFont(ofSize: 50)
         self.splitTime.textAlignment = .center
         self.splitTime.textColor = .white
@@ -41,7 +41,7 @@ class TimeViewController: UIViewController {
         
         //秒
         self.secondLabel = UILabel()
-        self.secondLabel.frame = CGRect(x:200,y:300,width:100,height:100)
+        self.secondLabel.frame = CGRect(x:210,y:300,width:100,height:100)
         self.secondLabel.font = UIFont.systemFont(ofSize: 50)
         self.secondLabel.textColor = .white
         self.view.addSubview(secondLabel)

@@ -663,28 +663,29 @@ Don't hesitate to tell a lot of lies. </string>
         <!--Post View Controller-->
         <scene sceneID="nzZ-dO-hCp">
             <objects>
-                <viewController id="ueK-j5-720" customClass="PostViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="postView" id="ueK-j5-720" customClass="PostViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIt-hE-Bup">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fp-MH-8rD">
-                                <rect key="frame" x="30" y="292" width="364" height="93"/>
+                                <rect key="frame" x="30" y="261" width="364" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
                                     <action selector="selectButton:" destination="iTI-ER-6Ay" eventType="touchUpInside" id="ZaG-c9-45O"/>
+                                    <action selector="selectButton:" destination="ueK-j5-720" eventType="touchUpInside" id="eI4-fC-X4w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHi-sS-C2N">
-                                <rect key="frame" x="30" y="441" width="364" height="93"/>
+                                <rect key="frame" x="30" y="402" width="364" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
@@ -694,36 +695,37 @@ Don't hesitate to tell a lot of lies. </string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZL-ay-fhD">
-                                <rect key="frame" x="30" y="594" width="364" height="93"/>
+                                <rect key="frame" x="30" y="556" width="364" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="selectButton:" destination="ueK-j5-720" eventType="touchUpInside" id="PCW-hD-PxE"/>
                                     <action selector="selectButton:" destination="iTI-ER-6Ay" eventType="touchUpInside" id="idJ-nt-JGt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose who you want to execute." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuQ-1S-vsf">
-                                <rect key="frame" x="44" y="765" width="326" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhN-3U-D8q">
+                                <rect key="frame" x="70" y="70" width="284" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="53"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Dear..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9i-t3-cQb">
-                                <rect key="frame" x="20" y="44" width="108" height="84"/>
+                                <rect key="frame" x="30" y="43" width="108" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                 <color key="textColor" systemColor="systemGray6Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhN-3U-D8q">
-                                <rect key="frame" x="70" y="115" width="284" height="108"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose who you want to execute." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuQ-1S-vsf">
+                                <rect key="frame" x="49" y="688" width="326" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="53"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -731,9 +733,9 @@ Don't hesitate to tell a lot of lies. </string>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="centerButton" destination="dHi-sS-C2N" id="zfF-9f-EDs"/>
-                        <outlet property="onButton" destination="2fp-MH-8rD" id="OnI-7N-F4M"/>
-                        <outlet property="underButton" destination="pZL-ay-fhD" id="bzp-PQ-vod"/>
+                        <outlet property="centerButton" destination="dHi-sS-C2N" id="JfE-e1-8Ro"/>
+                        <outlet property="onButton" destination="2fp-MH-8rD" id="Ei1-oB-Fzv"/>
+                        <outlet property="underBUtton" destination="pZL-ay-fhD" id="Bbc-Ac-x2e"/>
                         <outlet property="yourName" destination="bhN-3U-D8q" id="dyS-Ag-fiu"/>
                     </connections>
                 </viewController>
@@ -741,15 +743,15 @@ Don't hesitate to tell a lot of lies. </string>
             </objects>
             <point key="canvasLocation" x="1915.9420289855075" y="3936.8303571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="0OE-iQ-WUT">
             <objects>
-                <viewController id="dC8-xa-ocK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resultView" id="dC8-xa-ocK" customClass="ResultViewController" customModule="BlackWhisper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z8A-xs-e0P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="bk2-ez-8Og"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Mt-aP-Qoq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -988,9 +990,6 @@ Don't hesitate to tell a lot of lies. </string>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
